@@ -223,8 +223,11 @@ int main()
             else
             {
                 play(2, GAME);
-                if (replay(2, 1, GAME) == 0) return 0;
-                else main();
+                if (check_win(GAME) == 'X')
+                {
+                    if (replay(2, 1, GAME) == 0) return 0;
+                    else main();
+                }    
             }
             count++;
             system("cls");
