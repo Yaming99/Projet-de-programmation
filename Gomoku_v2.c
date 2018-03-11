@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <time.h> // pour la fonction rand
-#ifdef __unix__ // pour la fonction sleep, compilation sous diffÈrentes plateformes
+#ifdef __unix__ // pour la fonction sleep, compilation sous diff√©rentes plateformes
 #include <unistd.h>
 #elif defined _WIN32
 # include <windows.h>
 #define sleep(x) Sleep(1000 * x) // en millisecondes
 #endif
 #define N 19
-//…quipe I : SKT et Batte de Base-ball
+//√âquipe I : SKT et Batte de Base-ball
 
 
 
@@ -15,7 +15,7 @@
 int menu()
 {
     int choix;
-    system("cls"); // efface ce qui est affichÈ afin d'Èviter plusieurs affichages sur la console
+    system("cls"); // efface ce qui est affich√© afin d'√©viter plusieurs affichages sur la console
     printf("Bienvenue !\n");
     printf("Instructions du jeu : \n\n");
     printf("1) Alignez cinq jetons ou plus verticalement, horizontalement ou en diagonale pour gagner la partie,\n");
@@ -185,10 +185,10 @@ int main()
 {
     int a = menu(); // mode choisi
     char GAME[N][N];
-    int count = 0;  // nombre de jetons jouÈs
+    int count = 0;  // nombre de jetons jou√©s
     int m, n;       // longueur et largeur
     int x, y;       // longueur et largeur
-    int choix, nombre, c, b;
+    int nombre, c, b;
     char tab[nombre];
     ps5_init(GAME);
     ps5_afficher(GAME);
@@ -255,7 +255,7 @@ int main()
                     x = basic_ai(GAME, N, N);
                     y = basic_ai(GAME, N, N);
                 }
-                while('+' != GAME[x][y]) // joue sur une case dÈj‡ occupÈe
+                while('+' != GAME[x][y]) // joue sur une case d√©j√† occup√©e
                 {
                     x = basic_ai(GAME, N, N);
                     y = basic_ai(GAME, N, N);
