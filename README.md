@@ -15,3 +15,6 @@ Aide pour les développeurs d'IAs :
    •	Il est également important de ne pas jouer d’uniquement d’un seul côté, auquel cas, vous ne pourrez pas bloquer les coups de l’adversaire et le laisse donc jouer librement.
 
 Ce jeu a donc des règles simples, mais des stratégies très sophistiquées. Vous allez beaucoup apprendre en jouant. Vous allez avoir de nombreuses situations perdantes que vous pourrez alors appliquer lors de vos prochaines parties.
+
+En cas de questions ou de problèmes :
+anthony.quach@efrei.net
