@@ -78,7 +78,7 @@ void ps5_init(char (*GAME)[N])
 int check_win(char (*GAME)[N])
 {
     int i,j;
-    for(i=0; i<N; i++)
+    for(i=0; i<N; i++) // horizontal
     {
         for(j=0; j<N-4; j++)
         {
@@ -86,7 +86,7 @@ int check_win(char (*GAME)[N])
                 return GAME[i][j];
         }
     }
-    for(i=0; i<N-4; i++)
+    for(i=0; i<N-4; i++) // verticale
     {
         for(j=0; j<N; j++)
         {
@@ -94,7 +94,7 @@ int check_win(char (*GAME)[N])
                 return GAME[i][j];
         }
     }
-    for(i=0; i<N-4; i++)
+    for(i=0; i<N-4; i++) // diagonale principale
     {
         for(j=0; j<N-4; j++)
         {
@@ -102,7 +102,7 @@ int check_win(char (*GAME)[N])
                 return GAME[i][j];
         }
     }
-    for(i=0; i<N-4; i++)
+    for(i=0; i<N-4; i++) // autre diagonale
     {
         for(j=0; j<N-4; j++)
         {
@@ -115,7 +115,7 @@ int check_win(char (*GAME)[N])
 
 
 
-
+// demande où l'utilisateur veut jouer
 int play(int joueur, char (*GAME)[N])
 {
     int m, n;
@@ -150,7 +150,7 @@ int play(int joueur, char (*GAME)[N])
 
 
 
-
+// demande si l'utilisateur souhaite rejouer 
 int replay(int joueur, int n, char (*GAME)[N])
 {
     int choix;
@@ -172,7 +172,7 @@ int replay(int joueur, int n, char (*GAME)[N])
 
 
 
-
+// IA mouvements aléatoire
 int basic_ai(char (*GAME)[N], int n, int a)
 {
     return(rand() % n);
